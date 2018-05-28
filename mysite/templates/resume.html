@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<title>Ethan Tanen - Developer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Ethan<br>Tanen</b></h3>
+  </div>
+
+  <div class="w3-bar-block">
+    <a href="/home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="/resume" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Resume</a>
+    <a href="/projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Ethan Tanen</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Left Column -->
+    <div class="w3-third">
+
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/static/ethan_tanen.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-white">
+            <h2>Ethan Tanen</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-red"></i>Student - Colorado College</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-red"></i>Washington, DC</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-red"></i>Colorado Springs, CO</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-red"></i>e_tanen@coloradocollege.edu</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-red"></i>ethantanen@yahoo.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-red"></i>(202) 422-4926</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-red"></i>Programming Languages</b></p>
+          <p>Java</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:90%">90%</div>
+          </div>
+          <p>Python</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>C</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:75%">60%</div>
+          </div>
+          <p>SQL</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:50%">50%</div>
+          </div>
+          <p>Swift</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:50%">50%</div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+
+
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>Programming Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>WWTracker</b></h5>
+          <p>WWTracker is an application I created to send whitewater kayakers information on whitewater conditions in Colorado.
+            The application was written using Node.js with an Express.js framework. The program utilizes the Twilio API for SMS
+            capabilities, the DarkSky API for weather information and the USGS API for information on river flows. The program
+            is hosted on Herkoku
+          </p>
+          <hr>
+        </div>
+
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Neural Network</b></h5>
+          <p>Neural Network is an application that uses a feedforward neural network to recognize handwritten digits.
+            The program was coded in C with use of OpenMP to run portions of the training phase in parallel on Colorado
+            College’s cluster. The NN was trained on the MNIST dataset.
+          </p>
+          <hr>
+        </div>
+
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Pickup Game Organizer</b></h5>
+          <p>Pickup Game Organizer is an application that allows students at Colorado College to schedule pickup sports games
+             around campus. My role in the team was to create and manage the app’s database using SQL and phpMyAdmin.
+          </p>
+          <hr>
+        </div>
+      </div>
+
+
+        <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Groundskeeper - Colorado College - Colorado Springs, CO</b></h5>
+          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer Employment 2017</h6>
+          <p>
+             •Maintained grounds using sustainable landscaping techniques <br>
+             •Converted plots to native and xeric plants to reduce Colorado College’s water consumption
+          </p>
+          <hr>
+        </div>
+
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Baker - Loback's Bakery - Buena Vista, CO </b></h5>
+          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer Employment 2016</h6>
+          <p>
+            •	Oversaw baking of fresh donuts and bread at 5:00 am daily <br>
+            •	Worked with product sales in the afternoon
+          </p>
+          <hr>
+        </div>
+
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Whitewater Kayak Instructor - Camp Kabeyun - Alton Bay, NH</b></h5>
+          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer Employment 2013-2015</h6>
+          <p>
+            •	In Camp Responsibilities: Working with boys 7-15 on interpersonal skills, conflict resolution and maintaining emotional and physical wellbeing <br>
+            •	Out of Camp Responsibilities: Guiding boys ages 7-15 down whitewater rivers ranging in difficulty from easy (Class I-II) to difficult (Class III-IV) while teaching essential kayak maneuvers and basic whitewater hydrology
+          </p>
+          <hr>
+        </div>
+
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Floor Manager/Salesman - Bethesda Pet Shoppe - Bethesda, MD</b></h5>
+          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept. - June, 2010-2015 </h6>
+          <p>
+            •	Live Animal Care: feeding animals, cleaning enclosures, separating sexes, facilitating customer (predominantly children) interactions with the animals <br>
+            •	Educated customers on the specificities of animal care <br>
+            •	Product sales
+          </p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card-2 w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Colorado College - Colorado Springs, CO</b></h5>
+          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2019</h6>
+          <p>Persuing Major in Computer Science</p>
+          <p>GPA in Major: 3.51 </p>
+          <hr>
+        </div>
+
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Woodrow Wilson Senior High School - Washington, DC</b></h5>
+          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011-2015</h6>
+          <p>GPA: 3.61</p>
+          <hr>
+        </div>
+
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+
+  <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
