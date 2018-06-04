@@ -23,4 +23,4 @@ def _gcd(a,b):
 
 def gcd(a,b):
 
-    return(_gcd(a,b),steps)
+    return(_gcd(a,b))

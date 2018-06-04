@@ -5,7 +5,7 @@ def _prime_factors(a):
 
     primes = []
     factors = {}
-    
+
     num = a
 
     #Populate list of primes with all possible primes in factorization
@@ -18,14 +18,14 @@ def _prime_factors(a):
 
     #Determine prime facotrization
     for p in primes:
-        
+
         if num == 0:
             break
 
         if num%p == 0:
 
             factors[p]=0
-            
+
             while(num%p == 0):
                 num = num/p
                 factors[p] += 1
@@ -33,10 +33,10 @@ def _prime_factors(a):
     return factors
 
 
-def prime_factors(a):
-    n = int(input("num: "))
+def prime_factors(n):
 
-	p = _prime_factors(n)
+	p = _prime_factors(n); print("p",p)
+
 
 	if len(p) == 0:
 		return n
