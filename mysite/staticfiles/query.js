@@ -1,4 +1,4 @@
-$(document).read(()=> {
+$(document).ready(()=> {
 
 
   $("#gcd").click(()=>{
