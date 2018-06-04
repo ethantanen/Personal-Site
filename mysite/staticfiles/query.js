@@ -1,7 +1,7 @@
-$(document).ready(()=> {
+$(document).ready(function(){
 
 
-  $("#gcd").click(()=>{
+  $("#gcd").click(function(){
 
 
     console.log("SUP")
