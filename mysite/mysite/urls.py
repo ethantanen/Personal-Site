@@ -20,6 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from mysite import views
+from projects import views as poop
 
 
 urlpatterns = [
@@ -27,6 +28,7 @@ urlpatterns = [
     url(r'^$',views.home),
     url(r'^home/$',views.home),
     url(r'^resume/$',views.resume),
-    url(r'^projects/$',views.projects)
+    url(r'^projects/$',views.projects),
+
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
