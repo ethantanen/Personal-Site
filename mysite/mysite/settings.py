@@ -122,11 +122,11 @@ STATIC_PATH = os.path.join(BASE_DIR, 'static')
 
 STATIC_URL = '/static/'
 
-#django_heroku.settings(locals())
-
 # Extra places for collectstatic to find static files.
 
 STATICFILES_DIRS = (
     STATIC_PATH,
 
 )
+
+jango_heroku.settings(locals())
