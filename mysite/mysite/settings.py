@@ -25,7 +25,8 @@ SECRET_KEY = '#yrg5_zzb6_r@tl$&spd-__h7ehff#96b5fkt9qc6#w1@bf03s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['afternoon-sea-67084.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['afternoon-sea-67084.herokuapp.com','localhost','www.ethantanen.com'
+]
 
 
 # Application definition
