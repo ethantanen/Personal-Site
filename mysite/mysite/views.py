@@ -5,7 +5,6 @@ from static.python_programs import gcd as _gcd
 from static.python_programs import prime_factorization as _pf
 from django.views.decorators.csrf import csrf_exempt
 
-
 def home(request):
 	return render(request,'home.html',{})
 
@@ -27,7 +26,7 @@ def gcd(request):
 def prime_factors(request):
 
 	a = int(request.POST["a"])
+	print(a)
 	p = str(_pf.prime_factors(a))
-
 
 	return HttpResponse(p)

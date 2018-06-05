@@ -20,34 +20,50 @@
 
         <!-- Title of Widget -->
         <h4 class="text-center"> Greatest Common Divisor </h4>
-        <div class="input-group">
 
-          <!-- Input A -->
-          <div class="col-sm-4">
-            <span class="input-group-addon  "> a </span>
-            <input id="gcd_a" type="number" class="form-control" placeholder="input a" min="0">
+        <div class="row">
+          <div class="input-group">
+
+            <!-- Input A -->
+            <div class="col-sm-4">
+              <span class="input-group-addon  "> a </span>
+              <input id="gcd_a" type="number" class="form-control" placeholder="input a" min="0">
+            </div>
+
+            <!-- Input B -->
+            <div class="col-sm-4">
+              <span class="input-group-addon">b</span>
+              <input id="gcd_b" type="number" class="form-control" placeholder="input  b" min="0">
+            </div>
+
+            <!-- Output Answer -->
+            <div class="col-sm-4">
+              <span class="input-group-addon">gcd(a,b)</span>
+              <input id="gcd" type="text" class="form-control text-center" placeholder="?" readonly>
+            </div>
           </div>
 
-          <!-- Input B -->
-          <div class="col-sm-4">
-            <span class="input-group-addon">b</span>
-            <input id="gcd_b" type="number" class="form-control" placeholder="input  b" min="0">
-          </div>
+          <br>
+        </div>
+        <div class="row">
 
-          <!-- Output Answer -->
-          <div class="col-sm-4">
-            <span class="input-group-addon">gcd(a,b)</span>
-            <input id="gcd" type="text" class="form-control text-center" placeholder="?" readonly>
+          <!--
+          <div class="col-sm-6">
+            <button type="submit" class="btn btn-success center-block" id="gcd_button">Submit</button>
+          </div>
+          <div class="col-sm-6">
+            <button type="button" class="btn btn-success  center-block" id="gcd_code">Code</button>
+          </div>
+          -->
+
+          <div class="col-sm-9 col-sm-offset-3">
+            <button type="submit" class="btn btn-success" style="outline:none" id="gcd_button">Submit</button>
+            <a  class="btn btn-danger" href="/static/python_programs/gcd.py" download>Code</a>
           </div>
         </div>
-
-        <br>
-
-        <!-- Submit Form -->
-        <button type="submit" class="btn btn-success" id="gcd_button">Submit</button>
       </div>
-
     </div>
+
     <!-- End Greatest Common Divisor -->
 
     <!-- Prime Factorization -->
@@ -56,26 +72,32 @@
 
         <!-- Title of Widget -->
         <h4 class="text-center">Prime Factorization </h4>
+        <div class="row">
+          <!-- Input A -->
+          <div class="input-group">
 
-        <!-- Input A -->
-        <div class="input-group">
+            <div class="col-sm-4">
+              <span class="input-group-addon  "> a </span>
+              <input id="prime_fact_a" type="number" class="form-control" placeholder="input a">
+            </div>
 
-          <div class="col-sm-4">
-            <span class="input-group-addon  "> a </span>
-            <input id="prime_fact_a" type="number" class="form-control" placeholder="input a">
+            <!-- Output Answer -->
+            <div class="col-sm-8">
+              <span class="input-group-addon">Prime Factors</span>
+              <input id="prime_factors" type="text" class="form-control text-center" placeholder="?" readonly>
+            </div>
           </div>
+          <br>
+        </div>
 
-          <!-- Output Answer -->
-          <div class="col-sm-8">
-            <span class="input-group-addon">Prime Factors</span>
-            <input id="prime_factors" type="text" class="form-control text-center" placeholder="?" readonly>
+        <div class="row">
+          <div class="col-sm-9 col-sm-offset-3">
+
+            <!-- Submit Form -->
+            <button type="submit" style="outline:none" class="btn btn-success" id="prime_factorization_button">Submit</button>
+            <a  class="btn btn-danger" href="/static/python_programs/prime_factorization.py" download>Code</a>
           </div>
         </div>
-        <br>
-
-
-        <!-- Submit Form -->
-        <button type="submit" class="btn btn-success" id="prime_factorization_button">Submit</button>
       </div>
       <!-- End Prime Factorization -->
 
@@ -89,7 +111,7 @@
       <div class="well">
 
         <!-- Title of Widget -->
-        <h4 class="text-center"> Greatest Common Divisor </h4>
+        <h4 class="text-center"> Euclidean Algorithm </h4>
         <div class="input-group">
 
           <!-- Input A -->
@@ -114,7 +136,7 @@
         <br>
 
         <!-- Submit Form -->
-        <button type="submit" class="btn btn-success" id="gcd_button">Submit</button>
+        <button type="submit" style="outline:none" class="btn btn-success center-block" id="gcd_button">Submit</button>
       </div>
 
     </div>
@@ -125,7 +147,7 @@
       <div class="well">
 
         <!-- Title of Widget -->
-        <h4 class="text-center">Prime Factorization </h4>
+        <h4 class="text-center">Chinese Remainder Theorem </h4>
 
         <!-- Input A -->
         <div class="input-group">
@@ -145,7 +167,7 @@
 
 
         <!-- Submit Form -->
-        <button type="submit" class="btn btn-success" id="prime_factorization_button">Submit</button>
+        <button type="submit" style="outline:none" class="btn btn-success center-block" id="prime_factorization_button">Submit</button>
       </div>
       <!-- End Prime Factorization -->
 
