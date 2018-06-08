@@ -1,6 +1,4 @@
-{% extends "base_site.html" %}
-
-{% block content %}
+{% extends "base_site.html" %} {% block content %}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
@@ -12,7 +10,7 @@
   </div>
 
   <div>
-    <img src="/static/images/ethan_tanen.jpg" style="width:55%; height:20%; border-radius:5%"  onclick="onClick(this)" alt="Oh Me Oh My! What a handsome guy!">
+    <img src="/static/images/ethan_tanen.jpg" style="width:55%; height:20%; border-radius:5%" onclick="onClick(this)" alt="Oh Me Oh My! What a handsome guy!">
   </div>
 
   <!-- Modal for full size images on click-->
@@ -28,13 +26,10 @@
   <div class="w3-container" id="services" style="margin-top:75px; width: 70%">
     <h1 class="w3-xxxlarge w3-text-red"><b>About Me.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Hello! I'm Ethan Tanen, more commonly known as "Master Blaster, King of Disaster"! If I'm
-      not coding up something saucy, I'm either making sweet music for a sad world, navigating
-      perilous whitewater, cooling with DC's elite or preparing a meal that not even Gordon Ramsay
-      could scoff at.
+    <p>Hello! I'm Ethan Tanen, more commonly known as "Master Blaster, King of Disaster"! If I'm not coding up something saucy, I'm either making sweet music for a sad world, navigating perilous whitewater, cooling with DC's elite or preparing a meal that
+      not even Gordon Ramsay could scoff at.
     </p>
-    <p>Welcome to my website! The navigation bar includes links to my resume and a series of
-      coding projects worth sharing. Enjoy!
+    <p>Welcome to my website! The navigation bar includes links to my resume and a series of coding projects worth sharing. Enjoy!
     </p>
   </div>
 
@@ -42,27 +37,26 @@
   <div class="w3-container" id="contact" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>This portion if the site is not yet functional...Come back soon!</p>
-    <p>Feel free to contact me if your looking for work, have a job opportunity or just want to
-    say wassup! </p>
+    <p>This portion if the site is very functional!</p>
+    <p>Feel free to contact me if your looking for work, have a job opportunity, have a suggestion for the site or just want to say wassup! </p>
 
-    <form action="/search" method="get">
-      <div class="w3-section">
+    <form action="/email/" method="post">
+      <div class="form-group">
         <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter Full Name">
       </div>
-      <div class="w3-section">
+      <div class="form-group">
         <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email">
       </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
+      <div class="form-group">
+        <label>What's Up?</label>
+        <textarea class="form-control" rows="4" name="message" id="message"> </textarea>
       </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
 
-<!-- End page content -->
+  <!-- End page content -->
 </div>
 {% endblock %}

@@ -27,10 +27,12 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',views.home),
     url(r'^home/$',views.home),
+    url(r'^email/$',views.email),
     url(r'^resume/$',views.resume),
     url(r'^projects/$',views.projects),
     url(r'^calculator/gcd/$',views.gcd),
     url(r'^calculator/prime_factorization/$',views.prime_factors)
+
 
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
